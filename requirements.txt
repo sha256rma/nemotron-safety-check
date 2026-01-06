@@ -1,0 +1,5 @@
+torch
+transformers>=4.43.0
+accelerate
+sentencepiece
+protobuf
