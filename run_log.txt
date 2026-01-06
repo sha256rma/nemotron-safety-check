@@ -1,0 +1,9 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading dataset...
+Loaded 2784 prompts
+Resuming from checkpoint: 300/2784 already processed
+Loading model: nvidia/Nemotron-Content-Safety-Reasoning-4B
+This may take a few minutes...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:37<00:37, 37.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:05<00:00, 31.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:05<00:00, 32.75s/it]
+Using `use_fast=True` but `torchvision` is not available. Falling back to the slow image processor.
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
