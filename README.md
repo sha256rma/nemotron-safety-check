@@ -2,6 +2,16 @@
 
 Run NVIDIA's Nemotron-Content-Safety-Reasoning-4B model locally on CPU to classify content safety of prompts and responses.
 
+> **Content warning.** `test_prompts.json` and `Safety Check.xlsx` are safety
+> evaluation data. They contain prompts that are racist, violent, and otherwise
+> offensive by construction, because that is what a safety classifier has to be
+> measured against. They are labels and test cases, not endorsements.
+
+> **Dataset provenance.** `Safety Check.xlsx` holds the labelled evaluation set
+> used by `run_dataset.py` (columns: `language`, `Prompt`, `message_safety`,
+> `safety_categories`). TODO: state where this dataset came from and under what
+> terms it may be redistributed, before relying on it in published results.
+
 This setup uses **Reasoning OFF** mode (`/no_think`) for faster, low-latency classification without reasoning traces.
 
 ## Requirements
@@ -15,7 +25,7 @@ This setup uses **Reasoning OFF** mode (`/no_think`) for faster, low-latency cla
 ### 1. Create and activate a virtual environment
 
 ```bash
-cd /home/ubuntu/nemotron-safety-check
+cd nemotron-safety-check
 python3 -m venv venv
 source venv/bin/activate
 ```
